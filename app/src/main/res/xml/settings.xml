@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="个性化设置">
+        <cn.nlifew.linovel.widget.SingleChoicePreference
+            android:title="性别偏好"
+            android:key="@string/settings_key_site"
+            android:defaultValue="@string/settings_def_site"
+            app:entries="@array/settings_entries_site"
+            app:entryValues="@array/settings_values_site"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="夜间模式">
+        <SwitchPreferenceCompat
+            android:title="自动开启夜间模式"
+            android:key="@string/settings_key_night_auto"
+            android:defaultValue="@bool/settings_def_night_auto"/>
+        <cn.nlifew.linovel.widget.TimePickerPreference
+            android:title="自动开启时间"
+            android:key="@string/settings_key_night_on"
+            android:defaultValue="@integer/settings_def_night_on"
+            android:dependency="@string/settings_key_night_auto"/>
+        <cn.nlifew.linovel.widget.TimePickerPreference
+            android:title="自动关闭时间"
+            android:key="@string/settings_key_night_off"
+            android:defaultValue="@integer/settings_def_night_off"
+            android:dependency="@string/settings_key_night_auto"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="界面设置">
+        <SwitchPreferenceCompat
+            app:isPreferenceVisible="false"
+            android:title="导航栏显示主题色"
+            android:key="@string/settings_key_nav"
+            android:defaultValue="@bool/settings_def_nav" />
+        <cn.nlifew.linovel.widget.TextSizePreference
+            android:title="阅读文字大小"
+            android:key="@string/settings_key_reading_text_size"
+            android:defaultValue="@integer/settings_def_reading_text_size"
+            app:minValue="@integer/settings_min_reading_text_size"
+            app:maxValue="@integer/settings_max_reading_text_size"
+            app:topText="这是一段示例文字"/>
+        <cn.nlifew.linovel.widget.TextColorPreference
+            android:title="阅读文字颜色"
+            android:key="@string/settings_key_reading_text_color"
+            android:defaultValue="@integer/settings_def_reading_text_color"
+            app:minValue="@integer/settings_min_reading_text_color"
+            app:maxValue="@integer/settings_max_reading_text_color"
+            app:topText="这是一段示例文字"/>
+    </PreferenceCategory>
+</PreferenceScreen>

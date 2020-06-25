@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="15dp"
+    android:id="@+id/activity_novel_content"
+    android:divider="@drawable/divider_horizontal"
+    android:showDividers="middle">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <TextView
+            android:id="@+id/fragment_novel_words"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textAppearance="@style/NovelStatusTextAppearance"/>
+        <TextView
+            android:id="@+id/fragment_novel_recommends"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:gravity="center"
+            android:textAppearance="@style/NovelStatusTextAppearance"/>
+        <TextView
+            android:id="@+id/fragment_novel_month"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textAppearance="@style/NovelStatusTextAppearance"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fragment_novel_summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="16sp"
+        android:maxLines="6"
+        android:ellipsize="end" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/novel_category"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/NovelItemKeyTextAppearance"/>
+        <TextView
+            android:id="@+id/fragment_novel_category"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|end"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_right_gray_24dp"
+            android:textAppearance="@style/NovelItemValueTextAppearance"
+            tools:text="连载至943章 - 4天前更新"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+        <TextView
+            android:id="@+id/fragment_novel_author"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/NovelItemKeyTextAppearance"
+            tools:text="非10"/>
+        <TextView
+            android:id="@+id/fragment_novel_author_more"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/novel_more"
+            android:gravity="center_vertical|end"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_right_gray_24dp"
+            android:textAppearance="@style/NovelItemValueTextAppearance" />
+    </LinearLayout>
+</LinearLayout>

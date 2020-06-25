@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:id="@+id/fragment_home_vertical_item_parent">
+
+    <ImageView
+        android:id="@+id/fragment_home_vertical_item_cover"
+        android:layout_marginEnd="10dp"
+        android:layout_width="81dp"
+        android:layout_height="108dp" />
+    <TextView
+        android:id="@+id/fragment_home_vertical_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/fragment_home_vertical_item_cover"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:maxLines="2"
+        android:ellipsize="end"
+        tools:text="我全家都是穿过来的" />
+    <TextView
+        android:id="@+id/fragment_home_vertical_item_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/fragment_home_vertical_item_cover"
+        android:layout_below="@id/fragment_home_vertical_item_title"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="14sp"
+        android:maxLines="1"
+        tools:text="YTT桃桃-古代言情-连载-131万字"/>
+    <TextView
+        android:id="@+id/fragment_home_vertical_item_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/fragment_home_vertical_item_cover"
+        android:layout_below="@id/fragment_home_vertical_item_about"
+        android:layout_marginBottom="5dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        tools:text="一家三口穿越到古代，穿越过来就遭遇战乱，只能带着油带着酒，浪迹天涯一起走"/>
+</RelativeLayout>

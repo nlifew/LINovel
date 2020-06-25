@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="cn.nlifew.linovel">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".app.ThisApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity android:name=".ui.splash.SplashActivity"
+            android:theme="@style/NoActionBarWithBlackStatus">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".ui.empty.EmptyActivity">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:label="@string/app_name" />
+        <activity android:name=".ui.novel.NovelActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="novel"
+                    android:scheme="linovel" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.group.GroupActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="group"
+                    android:scheme="linovel" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.square.SquareActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="square"
+                    android:scheme="linovel" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:label="@string/title_activity_login" />
+
+        <activity android:name=".ui.login.SMSLoginActivity"
+            android:theme="@style/NoActionBarWithBlackStatus"
+            android:label="@string/title_activity_login" />
+
+        <activity android:name=".ui.reading.ReadingActivity"
+            android:theme="@style/NoActionBarWithBlackStatus"/>
+
+        <activity android:name=".ui.space.SpaceActivity"
+            android:theme="@style/TranslateBackground"/>
+
+        <activity android:name=".ui.settings.SettingsActivity" />
+        <activity android:name=".ui.chapter.ChapterActivity" />
+        <activity android:name=".ui.shelf.ShelfActivity" />
+        <activity android:name=".ui.about.AboutActivity" />
+        <activity android:name=".ui.history.HistoryActivity" />
+
+    </application>
+</manifest>

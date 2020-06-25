@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp">
+
+    <ImageView
+        android:id="@+id/fragment_ranking_item_cover"
+        android:layout_width="42dp"
+        android:layout_height="56dp"
+        tools:src="@drawable/ic_cover"/>
+
+    <TextView
+        android:id="@+id/fragment_ranking_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/fragment_ranking_item_cover"
+        android:layout_alignTop="@id/fragment_ranking_item_cover"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        tools:text="大魔王教养指南" />
+
+    <TextView
+        android:id="@+id/fragment_ranking_item_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/fragment_ranking_item_title"
+        android:layout_alignEnd="@id/fragment_ranking_item_title"
+        android:layout_alignBottom="@id/fragment_ranking_item_cover"
+        android:layout_marginBottom="5dp"
+        android:textSize="12sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        tools:text="风行水云间隔-古代言情-170万字" />
+
+</RelativeLayout>

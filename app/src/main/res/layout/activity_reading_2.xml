@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<!-- 这个 MeasureView 的各项参数都应该和 ViewPager2 中 TextView 相同 -->
+    <cn.nlifew.linovel.ui.reading.ReadingView
+        android:id="@+id/activity_reading_measure"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="25dp"
+        android:gravity="center"
+        android:textColor="@android:color/transparent"/>
+
+    <TextView
+        android:id="@+id/activity_reading_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="5dp"
+        tools:text="1/14"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/activity_reading_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="25dp"/>
+
+</FrameLayout>

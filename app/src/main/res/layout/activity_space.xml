@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <cn.nlifew.linovel.widget.DismissView
+        android:id="@+id/activity_space_dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+
+    <cn.nlifew.linovel.widget.DismissAppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:fitsSystemWindows="true">
+        <cn.nlifew.linovel.widget.ScrollCollapsedLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="@color/colorPrimary"
+            app:expandedTitleGravity="bottom|start"
+            app:expandedTitleMarginBottom="48dp"
+            app:expandedTitleMarginStart="102dp"
+            app:expandedTitleTextAppearance="@style/SpaceExpandedTextAppearance">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/space_background_x"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax"/>
+
+            <TextView
+                android:id="@+id/activity_space_sign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:layout_marginStart="100dp"
+                android:layout_marginBottom="24dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                tools:text="@string/nav_header_subtitle"/>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/activity_space_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:contentInsetStart="0dp"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:layout_collapseMode="pin"
+                app:titleMarginStart="50dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/activity_space_head"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:src="@drawable/ic_account_circle_white_48dp"
+                android:layout_gravity="bottom|start"
+                android:layout_marginBottom="14dp"
+                android:layout_marginStart="28dp"
+                app:layout_collapseMode="none"
+                app:scrollEnabled="true"
+                app:collapsedWidth="40dp"
+                app:collapsedHeight="40dp"/>
+        </cn.nlifew.linovel.widget.ScrollCollapsedLayout>
+    </cn.nlifew.linovel.widget.DismissAppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior=".widget.DismissScrollBehavior"
+        android:background="@android:color/white">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/activity_space_tab"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+        <androidx.viewpager.widget.ViewPager
+            android:layout_marginTop="50dp"
+            android:id="@+id/activity_space_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+
+<!--    <FrameLayout-->
+<!--        android:id="@+id/activity_space_host"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>-->
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/activity_space_scroll"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:layout_behavior=""-->
+<!--        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>-->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

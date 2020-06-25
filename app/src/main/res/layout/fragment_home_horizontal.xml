@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="15dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="15dp">
+
+    <TextView
+        android:id="@+id/fragment_home_horizontal_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        tools:text="免费新书" />
+
+    <TextView
+        android:id="@+id/fragment_home_horizontal_arrow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@id/fragment_home_horizontal_title"
+        android:layout_alignBottom="@id/fragment_home_horizontal_title"
+        android:layout_toEndOf="@id/fragment_home_horizontal_title"
+        android:textSize="14sp"
+        android:gravity="end|center_vertical"
+        android:drawableEnd="@drawable/ic_keyboard_arrow_right_gray_24dp"
+        android:text="@string/more"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/fragment_home_horizontal_arrow">
+        <include
+            android:id="@+id/fragment_home_horizontal_item_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            layout="@layout/fragment_home_horizontal_item" />
+        <include
+            android:id="@+id/fragment_home_horizontal_item_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            layout="@layout/fragment_home_horizontal_item" />
+        <include
+            android:id="@+id/fragment_home_horizontal_item_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            layout="@layout/fragment_home_horizontal_item" />
+        <include
+            android:id="@+id/fragment_home_horizontal_item_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            layout="@layout/fragment_home_horizontal_item" />
+    </LinearLayout>
+</RelativeLayout>

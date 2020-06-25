@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">LightNovel</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">未登录</string>
+    <string name="nav_header_subtitle">这个人很神秘，什么都没有写（//▽//）</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_search">Search</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <string name="menu_history">历史记录</string>
+    <string name="menu_download">下载管理</string>
+    <string name="menu_bookmark">我的书架</string>
+    <string name="menu_night">夜间模式</string>
+    <string name="menu_settings">设置</string>
+    <string name="menu_feedback">反馈</string>
+    <string name="menu_about">关于</string>
+
+    <string name="activity_main_tab_home">首页</string>
+    <string name="activity_main_tab_category">分类</string>
+    <string name="activity_main_tab_ranking">排行</string>
+    <string name="more">更多</string>
+
+    <string name="novel_category">目录</string>
+    <string name="novel_more">作者的其它作品</string>
+    <string name="novel_others">看过此书的人还看过</string>
+
+    <string name="fab_comment">发评论</string>
+    <string name="fab_read">阅读</string>
+    <string name="fab_subscribe">订阅</string>
+    <string name="fab_subscribed">已订阅</string>
+    <string name="title_activity_login">登录</string>
+    <string name="prompt_email">Email</string>
+    <string name="hint_account">手机/邮箱/起点账号</string>
+    <string name="hint_phone_number">手机号码</string>
+    <string name="hint_password">密码</string>
+    <string name="hint_sms_code">收到的短信验证码</string>
+    <string name="send_sms_code">发送验证码</string>
+    <string name="prompt_password">密码</string>
+    <string name="action_sign_up">没有账号？现在就注册一个</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">欢迎</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="default_sign">这个人很神秘，什么都没有写（//▽//）</string>
+</resources>

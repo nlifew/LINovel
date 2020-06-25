@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="settings_name">settings</string>
+
+    <string name="settings_key_site">site</string>
+    <string name="settings_val_site_girl">0</string>
+    <string name="settings_val_site_boy">1</string>
+    <string name="settings_def_site">@string/settings_val_site_boy</string>
+    <string-array name="settings_entries_site">
+        <item>男生</item>
+        <item>女生</item>
+    </string-array>
+    <string-array name="settings_values_site">
+        <item>@string/settings_val_site_boy</item>
+        <item>@string/settings_val_site_girl</item>
+    </string-array>
+
+    <string name="settings_key_night_mode">night_mode</string>
+    <bool name="settings_def_night_mode">false</bool>
+
+    <string name="settings_key_night_auto">night_auto</string>
+    <bool name="settings_def_night_auto">false</bool>
+
+    <string name="settings_key_night_on">night_on</string>
+    <integer name="settings_def_night_on">2200</integer>
+
+    <string name="settings_key_night_off">night_off</string>
+    <integer name="settings_def_night_off">600</integer>
+
+    <string name="settings_key_nav">nav_color</string>
+    <bool name="settings_def_nav">true</bool>
+
+    <string name="settings_key_reading_text_size">reading_text_size</string>
+    <integer name="settings_def_reading_text_size">18</integer>
+    <integer name="settings_min_reading_text_size">10</integer>
+    <integer name="settings_max_reading_text_size">24</integer>
+    
+    <string name="settings_key_reading_text_color">reading_text_color</string>
+    <integer name="settings_def_reading_text_color">0x737373</integer>
+    <integer name="settings_min_reading_text_color">0</integer>
+    <integer name="settings_max_reading_text_color">0xFFFFFF</integer>
+
+</resources>
